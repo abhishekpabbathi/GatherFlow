@@ -1,8 +1,8 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://gatherflow-backend.onrender.com",
-  timeout: 10000
+  baseURL: "https://gatherflow-backend.onrender.com/api/users",
+  timeout: 10000,
 });
 
 export const registerUser = async (formData) => {
