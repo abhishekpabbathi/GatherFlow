@@ -1,0 +1,37 @@
+/* GatherFlow shared design tokens — paste into App.css or import in each page */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Playfair+Display:wght@700;800&display=swap');
+
+:root {
+  --cream:   #fdfaf5;
+  --warm:    #f5ede0;
+  --paper:   #fffcf7;
+  --gold:    #e8a020;
+  --gold2:   #f5c842;
+  --amber:   #ff8c00;
+  --purple:  #6d28d9;
+  --purple2: #8b5cf6;
+  --rose:    #e11d48;
+  --teal:    #0d9488;
+  --green:   #059669;
+  --ink:     #1c1612;
+  --ink2:    #4a3f35;
+  --muted:   #9c8c7c;
+  --border:  #e8ddd0;
+  --shadow:  rgba(100,60,20,0.12);
+  --radius:  22px;
+  --font:    'Nunito', sans-serif;
+  --serif:   'Playfair Display', serif;
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { font-size:16px; }
+body { font-family:var(--font); background:var(--cream); color:var(--ink); -webkit-font-smoothing:antialiased; }
+
+/* Warm background used across all pages */
+.gf-bg {
+  position:fixed; inset:0; z-index:0;
+  background:
+    radial-gradient(ellipse at 0% 0%,   #ffe0b2 0%, transparent 50%),
+    radial-gradient(ellipse at 100% 0%, #e8d5ff 0%, transparent 50%),
+    radial-gradient(ellipse at 50% 100%,#b2ebf2 0%, transparent 60%),
+    var(--cream);
+}
